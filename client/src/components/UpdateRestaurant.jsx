@@ -29,7 +29,7 @@ const UpdateRestaurant = (props) => {
 
         fetchData();
 
-    }, []);
+    }, []);  // this is kept empty
 
     const handleSubmit = async (e) => {
         e.preventDefault();

@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 */
 
 app.use("/", (req,res) => {
-  res.send("server is running");
+  res.send("server is running...");
 });
 
 //To define a route in express, first we have to reference the express instance(object)
