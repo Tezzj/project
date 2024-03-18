@@ -21,9 +21,9 @@ app.use((req, res, next) => {
 
 */
 
-app.use("/", (req,res) => {
-  res.send("server is running..");
-});
+// app.use("/", (req,res) => {
+//   res.send("server is running..");
+// });
 
 //To define a route in express, first we have to reference the express instance(object)
 app.get("/api/v1/restaurants", async (req, res) => {       // () is a callback function which triggers when a get request comes. It takes 2 params req(stores the request) and res(stores the response)

@@ -16,7 +16,6 @@ const RestaurantList = (props) => {
             try {
               const response = await RestaurantFinder.get("/");
               console.log(response);
-              //console.log(response.data.data.restaurant.name);
               setRestaurants(response.data.data.restaurant);
             } catch (err) {
               console.log(err);
@@ -32,6 +31,7 @@ const RestaurantList = (props) => {
         e.stopPropagation();
         try{
            const response = await RestaurantFinder.delete(`/${id}`);
+           console.log(response);
            setRestaurants(restaurants.filter(restaurant => {
             return restaurant.id !== id
            }))
